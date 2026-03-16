@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dr. Hernán B. Rodríguez | Personal Website</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #222;
+            background-color: #f4f6f8;
+        }
+
+        /* ===== Animated Background ===== */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            animation: scientificFade 30s infinite;
+            filter: grayscale(0%) brightness(90%);
+            z-index: -1;
+        }
+
+         @keyframes scientificFade {
+            0%   { background-image: url("slider-1.jpg"); }
+            30%  { background-image: url("slider-2.jpg"); }
+            60%  { background-image: url("slider-3.jpg"); }
+            90%  { background-image: url("slider-4.jpg"); }
+	   100%  { background-image: url("slider-1.jpg"); }
+        }
+
+        /* ===== Navigation ===== */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #2c6bed;
+        }
+
+        /* ===== Sections ===== */
+        section {
+            max-width: 900px;
+            margin: 70px auto;
+            background: rgba(255, 255, 255, 0.97);
+            padding: 35px;
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #2c6bed;
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        /* ===== Academic Links ===== */
+        .academic-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .academic-links a {
+            text-decoration: none;
+            color: #2c6bed;
+            font-weight: 500;
+        }
+
+        .academic-links a:hover {
+            text-decoration: underline;
+        }
+
+        .publication {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #2c6bed;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #eaeaea;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <strong>Dr. Hernán B. Rodríguez</strong>
+        <ul>
+	    <li><a href="Research_es.html">🌐<span style="color:red; background-color:yellow;">EN</span>/ES</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a href="Publications.html">Publications</a></li>
+	    <li><a href="Teaching.html">Teaching</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Publications -->
+    <section id="research">
+        <h2>Research Interests</h2>
+	<p>My scientific interests focus on <strong>nanoparticulate and nanostructured photosensitizing systems</strong>, as well as the <strong>photophysics and photochemistry of dyes in heterogeneous media</strong>, including inert and active (semiconducting) microparticles, nanoparticles, and thin films. I am particularly interested in <strong>molecular interactions and energy- and charge-transfer processes</strong>.</p>
+
+<p>My research lies within the field of <strong>Physical Chemistry</strong>, with an emphasis on <strong>materials science, photophysics, and photochemistry</strong>. Through my work, I have gained extensive experience in the use and interpretation of a wide range of spectroscopic techniques, including transmission and diffuse reflectance absorption spectroscopy; steady-state and time-resolved fluorescence and phosphorescence; fluorescence anisotropy; and the study of transient species using transient absorption spectroscopies, such as laser flash photolysis (by transmission and/or diffuse reflectance). I also have experience with laser-induced optoacoustic spectroscopy, X-ray photoelectron spectroscopy (XPS), Fourier-transform infrared spectroscopy (FTIR), and kinetic characterization methods (e.g., modulation techniques and stopped-flow methods), as well as general materials characterization techniques (e.g., TEM, SEM, DLS, TGA, XRD, etc.).</p>
+
+<p>In addition, I have developed <strong>novel experimental methodologies</strong> and <strong>physico-mathematical models</strong> that leverage spectroscopic data to investigate physicochemical processes.</p>
+<p>Currently focused on the <strong>development of photosensitizing and bioimaging systems</strong> with potential applications in biological and environmental contexts.</p>
+</section>
+  
+<!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hbr@qi.fcen.uba.ar">hbr@qi.fcen.uba.ar</a> // <a href="mailto:hernanbrodriguez76@gmail.com">hernanbrodriguez76@gmail.com</a></p>
+        <p>Affiliations: Departamento de Química Inorgánica, Analítica y Química Física (DQIAQF) / Instituto de Química, Física de los Materiales, Medio Ambiente y Energía (INQUIMAE, UBA-CONICET), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires, Ciudad Universitaria, Pabellón II, Buenos Aires, Argentina.</p>
+    </section>
+
+
+    <footer>
+        © 2026 Hernán B. Rodríguez | Personal Website
+    </footer>
+
+</body>
+</html>
